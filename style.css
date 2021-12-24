@@ -1,0 +1,15 @@
+* {
+  background-color: #efefef;
+  color: #1f1f1f;
+  text-align: center;
+  font-family: sans;
+}
+
+p {
+  font-size: 16em;
+}
+
+footer {
+  font-size: 1em;
+  color: #6a6a6a;
+}
