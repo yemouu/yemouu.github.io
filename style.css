@@ -1,15 +1,116 @@
+:root {
+  /* colors from my linux theme */
+  --bg_color: #efefef;
+  --fg_color: #1f1f1f;
+
+  /* Black */
+  --color0: #3f3f3f;
+  --color8: #6a6a6a;
+
+  /* Red */
+  --color1: #e67b7b;
+  --color9: #ed9a9a;
+
+  /* Green */
+  --color2: #80ba63;
+  --color10: #a3d989;
+
+  /* Yellow */
+  --color3: #f5a868;
+  --color11: #f7c297;
+
+  /* Blue */
+  --color4: #849ce6;
+  --color12: #a6baf5;
+
+  /* Magenta */
+  --color5: #b37fe3;
+  --color13: #d1adf2;
+
+  /* Cyan */
+  --color6: #6ebdc4;
+  --color14: #bedcde;
+
+  /* White */
+  --color7: #d2d2d2;
+  --color15: #dfdfdf;
+
+  --headerFontSize: 1.1em;
+}
+
 * {
-  background-color: #efefef;
-  color: #1f1f1f;
-  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg_color);
   font-family: sans;
 }
 
-p {
-  font-size: 16em;
+a {
+  color: var(--color4);
+  font-weight: bold;
 }
 
-footer {
-  font-size: 1em;
-  color: #6a6a6a;
+a:hover {
+  color: var(--color12);
+}
+
+.box {
+  border-style: solid;
+  border-color: var(--color7);
+  border-width: 0.15em;
+  padding: 1.2em;
+  margin: auto;
+  max-width: 40%;
+}
+
+.wa {
+  font-size: 4em;
+}
+
+.page-header {
+  background: var(--color15);
+  padding: var(--headerFontSize);
+  text-align: center;
+  font-size: var(--headerFontSize);
+  margin-bottom: 2em;
+}
+
+.page-header li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.page-header a {
+  color: var(--fg_color);
+  text-decoration: none;
+  padding: var(--headerFontSize);
+}
+
+.page-header a:hover {
+  background: var(--color7);
+}
+
+.page-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 55%;
+  grid-gap: 1.5em;
+  margin: auto;
+}
+
+.page-content .table-left {
+  text-align: right;
+  color: var(--color5);
+  padding-right: 0.5em;
+}
+
+.page-footer {
+  left: 50%;
+  margin-top: 2em;
+  text-align: center;
+  color: var(--color8);
+  font-size: 0.8em;
 }
