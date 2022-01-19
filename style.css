@@ -45,7 +45,7 @@
 
 body {
   background: var(--bg_color);
-  font-family: sans;
+  font-family: sans-serif;
 }
 
 a {
