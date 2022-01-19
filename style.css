@@ -62,8 +62,8 @@ a:hover {
   border-color: var(--color7);
   border-width: 0.15em;
   padding: 1.2em;
+  max-width: 32em;
   margin: auto;
-  max-width: 40%;
 }
 
 .wa {
@@ -96,9 +96,8 @@ a:hover {
 .page-content {
   display: grid;
   grid-template-columns: 1fr;
-  width: 55%;
   grid-gap: 1.5em;
-  margin: auto;
+  margin: 1em;
 }
 
 .page-content .table-left {
@@ -108,7 +107,6 @@ a:hover {
 }
 
 .page-footer {
-  left: 50%;
   margin-top: 2em;
   text-align: center;
   color: var(--color8);
