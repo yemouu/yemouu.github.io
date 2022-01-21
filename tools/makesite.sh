@@ -7,7 +7,7 @@
 [ "${0%/*}" != "$0" ] && { cd "${0%/*}" || exit 1; }
 
 websrc=../web-src
-webroot=../site-root
+webroot=../docs
 
 # Old away
 rm $webroot/*
