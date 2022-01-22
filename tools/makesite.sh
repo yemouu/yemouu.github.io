@@ -44,3 +44,4 @@ skel_eton() (
 for file in "$websrc/content/"*
 do skel_eton "$file" > "$webroot/${file##*/}"
 done
+printf '%s' "yemou.me" > "$webroot/CNAME"
