@@ -36,6 +36,8 @@
   --color15: #dfdfdf;
 
   --headerFontSize: 1.1em;
+  --gaps: 1.4em;
+  --box-width: 20em;
 }
 
 * {
@@ -57,13 +59,49 @@ a:hover {
   color: var(--color12);
 }
 
+h1 {
+  font-size: 2em;
+  margin-bottom: 0.2em;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+abbr {
+  color: var(--color3);
+  font-weight: bold;
+}
+
 .box {
   border-style: solid;
   border-color: var(--color7);
-  border-width: 0.15em;
+  border-width: 0.2em;
   padding: 1.2em;
-  max-width: 32em;
-  margin: auto;
+  max-width: 20em;
+  width: max-content;
+  margin: var(--gaps) auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--box-width), 1fr));
+  grid-gap: 0 var(--gaps);
+}
+
+.side-by-side {
+  columns: 3;
+  text-align: center;
+  list-style-type: none;
+}
+
+.table-left {
+  text-align: right;
+  color: var(--color13);
+  padding-right: 0.5em;
+  font-weight: bold;
 }
 
 .wa {
@@ -94,20 +132,13 @@ a:hover {
 }
 
 .page-content {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 1.5em;
-  margin: 1em;
-}
-
-.page-content .table-left {
-  text-align: right;
-  color: var(--color5);
-  padding-right: 0.5em;
+  max-width: 64em;
+  margin: 1em auto;
 }
 
 .page-footer {
   margin-top: 2em;
+  margin-bottom: 1em;
   text-align: center;
   color: var(--color8);
   font-size: 0.8em;
